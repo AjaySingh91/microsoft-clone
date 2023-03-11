@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navbar flex justify-between items-center -mt-10 md:m-0">
+        <div class="hanburg my-4 ml-3 cursor-pointe md:hidden">
+            <div class="line h-0.5 w-5 my-1 bg-black"></div>
+            <div class="line h-0.5 w-5 my-1 bg-black"></div>
+            <div class="line h-0.5 w-5 my-1 bg-black"></div>
+        </div>
+        <div class="search -ml-10 md:order-2 md:hidden">Search</div>
+        <div class="logoAnbItems md:hidden">
+            <div class="logo h-20 w-20 mt-16"><img
+                    src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31"
+                    alt="logo">
+            </div>
+        </div>
+        <div
+            class="navitems absolute md:text-center md:mt-10 md:static bg-slate-300 w-fit md:w-auto inset-0 md:bg-white md:flex md:space-x-7 -translate-x-96 md:translate-x-0">
+            <div class="logo h-22 w-22 "><img
+                    src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31"
+                    alt="logo">
+            </div>
+            <div class="items md:text-xl h-10">Microsoft 365</div>
+            <div class="items md:text-xl h-10">Teams</div>
+            <div class="items md:text-xl h-10">Window</div>
+            <div class="items md:text-xl h-10">Surface</div>
+            <div class="items md:text-xl h-10">Xbox</div>
+            <div class="items md:text-xl h-10">Support</div>
+        </div>
+
+        <div class="cart text-center flex md:order-3 md:mx-3 md:space-x-3">
+            <div class="msall hidden md:block">All Microsoft</div>
+            <div class="search hidden md:block">Search</div>
+            <div class="cart">Cart Account</div>
+        </div>
+    </div>
+
+    <div class="slider flex flex-col-reverse ">
+        <div class="textAboutMain ml-5 md:-translate-y-60">
+            <p class="text-xl ">Microsoft 365</p>
+            <p>Everything you need to achieve more in less time</p>
+            <div class="mainImgLinks flex">
+                <div> <button class="bg-blue-600 text-white rounded px-2 text-center">For One Person</button></div>
+                <div> <button class="bg-white text-blue-600 rounded px-2 text-center">For upto Six People -></button>
+                </div>
+            </div>
+        </div>
+        <div class="mainImage"><img
+                src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-M365-Icon-Bounce-Word-Merch:VP4-1399x600"
+                alt="mainImage" class=""></div>
+    </div>
+
+    <div class="smallLogos md:flex md:justify-center">
+        <div class="smlg mx-5 my-5 flex"><img src="data:image/webp;base64,UklGRnoBAABXRUJQVlA4IG4BAACwDACdASooACgAPgkCgUCBHAAAEJaSLAHwA/QDmArwADaAP5BNgfwD8Vf1A+5muW/F39JcsB/Vfwg/UnXAP4t+LuuA/rv4k7oH/Cv4R/d/yv/f/lGkGpXlyjiUFkyxvF3BUHBK5TWHNl2f+h+YgAD+/7hhtfIYzHVtniX0C4YisPlJr1G+qEAbr/TFY0vkGrPgx//+8vQrM0bWZoQm85zyt79tsCHd81ZhQgWcTBhQ3OPg60gnUN4phV7ytnzEA1Aq33JaPlLYr/4wcGjP/u6dv6kn1YxCPEQExs3/vT5yRgiDWb8/8j//723//5m5X5DPzM+v/1/68wHR9Xw/69g8N3v1QH/67uQx1zOoucDKjbcmv2S8DP0p3g9sDF5tEax8fCwj4r0AWAmcxkHCNVjgnhWTS/kSiG/1jiIuVk5Gn/pnv/ta46IfJmid//eo3mJKPD1FfrRKMQqSh//NXKo6KrYHxOizc5QOK0AAAAA=" alt="">
+            <p class="ml-3 mt-1 first-line:text-center">Choose Your Microsoft 365</p>
+        </div>
+        <div class="smlg mx-5 my-5 flex"><img src="data:image/webp;base64,UklGRpIBAABXRUJQVlA4IIYBAABwCgCdASooACgAPkkcjEQioaGaqq6oKASEtIAIhfiq/xN9Ef5vSoH5Vagn+O2uR/wH2k+/f/Ufzbxc/UV/nv+mLm1mHc8y9dWilGG21hZVzLmgRDmkBcNTx/a+AAD+/3YtX/BN8/8Hbnf/koXmM+bAdG/Mcc99hglzFUQpSZ4d6H/yC588hmhH3DI8bz7shOLG0VsJGzW/PEwb2pF+uWcK4RlpG8fxUyR/zbLRp+YX81G/JM/H9jiWV/Duj7WO7BReVRTxdixrM4eELrurTQH7a8BSkp2m7rpWajH49hj3VaCde3cr21jh5/05o4Qi7kWk8lK8HoPh1n39kML5JSekwkqPl+JlKEZ41eeC8ruCUnwQp4EnivwBb38XKVGP97ECckTtFOI3vvO08Og1GLA+cJr/PPOUwcp/KXmaBo/kKBOOIc6isTs9OhJLvHJIC+e38UXKkjw5/p8qrE727YX/l6N+3fS8lCJC9x4DJlBf/fCLwNP9lKWTVmJ/q28bSsVGKvx8AAA="
+                alt="">
+            <p class="ml-3 mt-1 first-line:text-center">Explore Surface device</p>
+        </div>
+        <div class="smlg mx-5 my-5 flex"><img src="data:image/webp;base64,UklGRvYBAABXRUJQVlA4IOoBAAAQCQCdASooACgAPkkejEQioaEXHf8wKASEtIAGdg4KPuI4AawMYM0CPQxNUgpYRDwl/7XvI7BZKweOCt2w9gf2X5Ei2XOO6t5QLtHNQOIbeuAA/v92eKtC0RJ532eO6V+MRI+Uw17/jP5lr/st/9URgJ+A/9p10aaK6Bo/PMVvlluWnX+Fny8i7+Ub1X6KnZt3upvU0bTzFfBXj6aj3beT/9PZhV/+PxPKfs0Z+E8BPderCs/y4/rsp/5Bu7NTTPNtz6wvwiT+6fubQ5/z2/0tjnc3MQ37Nm7eVD/u7vl8+VoGFQ4URpxh2vYXySi9FLIl4IwbUsjWVxknxBI8F1RBnTQQ0Pt/BQ1gsWGaasCDcoTn/jx/9RpCHJ9oo98v4K4wqUkl6Fv/G4ePo57oJdO8KtH2736CmjwP9+vq8/eVCfYCdepMXFWVCmeP+EB8j/Eo+8v9PQtipIOIaZy7U/C+oN1DglZ90T2Sj+e4JFuDpV9fOYUwsRZtmsa+HkF6mCcIQHFAm89WzQNagfT73JZE03XPr8cwUJs7E/xAXfzRf8yNcZyKO1A5hcnaP07LIZS/r2GbcQGwYbFoFQyBSSVh+ghOceSht1j6fO2//Q+0XyWNL8RJ2DfVoShzYHTIF+LBzprL5SCDTgAA" alt="">
+            <p class="ml-3 mt-1 first-line:text-center">Buy Xbox games</p>
+        </div>
+        <div class="smlg mx-5 my-5 flex"><img src="data:image/webp;base64,UklGRnoBAABXRUJQVlA4IG4BAACwDACdASooACgAPgkCgUCBHAAAEJaSLAHwA/QDmArwADaAP5BNgfwD8Vf1A+5muW/F39JcsB/Vfwg/UnXAP4t+LuuA/rv4k7oH/Cv4R/d/yv/f/lGkGpXlyjiUFkyxvF3BUHBK5TWHNl2f+h+YgAD+/7hhtfIYzHVtniX0C4YisPlJr1G+qEAbr/TFY0vkGrPgx//+8vQrM0bWZoQm85zyt79tsCHd81ZhQgWcTBhQ3OPg60gnUN4phV7ytnzEA1Aq33JaPlLYr/4wcGjP/u6dv6kn1YxCPEQExs3/vT5yRgiDWb8/8j//723//5m5X5DPzM+v/1/68wHR9Xw/69g8N3v1QH/67uQx1zOoucDKjbcmv2S8DP0p3g9sDF5tEax8fCwj4r0AWAmcxkHCNVjgnhWTS/kSiG/1jiIuVk5Gn/pnv/ta46IfJmid//eo3mJKPD1FfrRKMQqSh//NXKo6KrYHxOizc5QOK0AAAAA=" alt="">
+            <p class="ml-3 mt-1 first-line:text-center">Get Window 11</p>
+        </div>
+    </div>
+
+
+    <div class="XboxAid md:flex md:justify-center items-center">
+        <div class="smlg mx-5 my-5 flex-col"><img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-AEM-PC-Game-Pass-Expansion?wid=515&hei=293&fit=crop" alt="">
+            <p class="text-2xl">Xbox Game Pass Unlimited</p>
+            <p>Get your first month of Xbox Game Pass Unlimited for only 50</p>
+            <div><a href="#" class="text-2xl text-blue-600">Join now ></a></div>
+        </div>
+        <div class="smlg mx-5 my-5 flex-col"><img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Surface-Pro-9-M1-Platinum-02-1?wid=515&hei=293&fit=crop" alt="">
+            <p class="text-2xl">Surface Pro 9</p>
+            <p>Get your first month of Xbox Game Pass Unlimited for only 50</p>
+            <div><a href="#" class="text-2xl text-blue-600">Learn more ></a></div>
+        </div>
+        <div class="smlg mx-5 my-5 flex-col"><img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Surface-Laptop-5-M1-Platinum-01-1?wid=515&hei=293&fit=crop" alt="">
+            <p class="text-2xl">Surface laptop 5</p>
+            <p>Get your first month of Xbox Game Pass Unlimited for only 50</p>
+            <div><a href="#" class="text-2xl text-blue-600">Learn more ></a></div>
+        </div>
+        <div class="smlg mx-5 my-5 flex-col"><img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Bing-AI?wid=515&hei=293&fit=crop" alt="">
+            <p class="text-2xl">Introducing the first bing</p>
+            <p>Your AI-powered copilot for the web. Ask questions. Chat to refine results. Get comprehensive answers and creative inspiration</p>
+            <div><a href="#" class="text-2xl text-blue-600">Join the Bing preview ></a></div>
+        </div>
+    </div>
+
+
+    <div class="slider flex flex-col-reverse ">
+        <div class="textAboutMain ml-5 md:-translate-y-60">
+            <p class="text-xl ">Surface laptop Studio</p>
+            <p>Flex your creative euslcel onm the Everything you need to achieve more in less time</p>
+            <div class="mainImgLinks flex mt-2 text-center ">
+                <div> <button class="bg-blue-600 text-white rounded px-2 text-center">For One Person</button></div>
+            </div>
+        </div>
+        <div class="mainImage flex"><img
+                src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Studio-Laptop-Hand-Right:VP4-1260x600"
+                alt="mainImage" class=""></div>
+    </div>
+
+    <div class="head text-4xl mx-5 font-serif">For Busssiness</div>
+
+    
+    <div class="BussinesAid md:flex md:justify-center items-center">
+        <div class="smlg mx-5 my-5 flex-col"><img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-AEM-PC-Game-Pass-Expansion?wid=515&hei=293&fit=crop" alt="">
+            <p class="text-2xl">Xbox Game Pass Unlimited</p>
+            <p>Get your first month of Xbox Game Pass Unlimited for only 50</p>
+            <div><a href="#" class="text-2xl text-blue-600">Join now ></a></div>
+        </div>
+        <div class="smlg mx-5 my-5 flex-col"><img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Surface-Pro-9-M1-Platinum-02-1?wid=515&hei=293&fit=crop" alt="">
+            <p class="text-2xl">Surface Pro 9</p>
+            <p>Get your first month of Xbox Game Pass Unlimited for only 50</p>
+            <div><a href="#" class="text-2xl text-blue-600">Learn more ></a></div>
+        </div>
+        <div class="smlg mx-5 my-5 flex-col"><img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Surface-Laptop-5-M1-Platinum-01-1?wid=515&hei=293&fit=crop" alt="">
+            <p class="text-2xl">Surface laptop 5</p>
+            <p>Get your first month of Xbox Game Pass Unlimited for only 50</p>
+            <div><a href="#" class="text-2xl text-blue-600">Learn more ></a></div>
+        </div>
+        <div class="smlg mx-5 my-5 flex-col"><img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Bing-AI?wid=515&hei=293&fit=crop" alt="">
+            <p class="text-2xl">Introducing the first bing</p>
+            <p>Your AI-powered copilot for the web. Ask questions. Chat to refine results. Get comprehensive answers and creative inspiration</p>
+            <div><a href="#" class="text-2xl text-blue-600">Join the Bing preview ></a></div>
+        </div>
+    </div>
+
+    <div class="folloInst flex space-x-5">
+        <div class="folomsg text-3xl">Follow Microsoft</div>
+        <div class="logo"><a href="#"> <img src="data:image/webp;base64,UklGRvYBAABXRUJQVlA4IOoBAAAQCQCdASooACgAPkkejEQioaEXHf8wKASEtIAGdg4KPuI4AawMYM0CPQxNUgpYRDwl/7XvI7BZKweOCt2w9gf2X5Ei2XOO6t5QLtHNQOIbeuAA/v92eKtC0RJ532eO6V+MRI+Uw17/jP5lr/st/9URgJ+A/9p10aaK6Bo/PMVvlluWnX+Fny8i7+Ub1X6KnZt3upvU0bTzFfBXj6aj3beT/9PZhV/+PxPKfs0Z+E8BPderCs/y4/rsp/5Bu7NTTPNtz6wvwiT+6fubQ5/z2/0tjnc3MQ37Nm7eVD/u7vl8+VoGFQ4URpxh2vYXySi9FLIl4IwbUsjWVxknxBI8F1RBnTQQ0Pt/BQ1gsWGaasCDcoTn/jx/9RpCHJ9oo98v4K4wqUkl6Fv/G4ePo57oJdO8KtH2736CmjwP9+vq8/eVCfYCdepMXFWVCmeP+EB8j/Eo+8v9PQtipIOIaZy7U/C+oN1DglZ90T2Sj+e4JFuDpV9fOYUwsRZtmsa+HkF6mCcIQHFAm89WzQNagfT73JZE03XPr8cwUJs7E/xAXfzRf8yNcZyKO1A5hcnaP07LIZS/r2GbcQGwYbFoFQyBSSVh+ghOceSht1j6fO2//Q+0XyWNL8RJ2DfVoShzYHTIF+LBzprL5SCDTgAA" alt=""></a></div>
+        <div class="logo"><a href="#"> <img src="data:image/webp;base64,UklGRvYBAABXRUJQVlA4IOoBAAAQCQCdASooACgAPkkejEQioaEXHf8wKASEtIAGdg4KPuI4AawMYM0CPQxNUgpYRDwl/7XvI7BZKweOCt2w9gf2X5Ei2XOO6t5QLtHNQOIbeuAA/v92eKtC0RJ532eO6V+MRI+Uw17/jP5lr/st/9URgJ+A/9p10aaK6Bo/PMVvlluWnX+Fny8i7+Ub1X6KnZt3upvU0bTzFfBXj6aj3beT/9PZhV/+PxPKfs0Z+E8BPderCs/y4/rsp/5Bu7NTTPNtz6wvwiT+6fubQ5/z2/0tjnc3MQ37Nm7eVD/u7vl8+VoGFQ4URpxh2vYXySi9FLIl4IwbUsjWVxknxBI8F1RBnTQQ0Pt/BQ1gsWGaasCDcoTn/jx/9RpCHJ9oo98v4K4wqUkl6Fv/G4ePo57oJdO8KtH2736CmjwP9+vq8/eVCfYCdepMXFWVCmeP+EB8j/Eo+8v9PQtipIOIaZy7U/C+oN1DglZ90T2Sj+e4JFuDpV9fOYUwsRZtmsa+HkF6mCcIQHFAm89WzQNagfT73JZE03XPr8cwUJs7E/xAXfzRf8yNcZyKO1A5hcnaP07LIZS/r2GbcQGwYbFoFQyBSSVh+ghOceSht1j6fO2//Q+0XyWNL8RJ2DfVoShzYHTIF+LBzprL5SCDTgAA" alt=""></a></div>
+        <div class="logo"><a href="#"> <img src="data:image/webp;base64,UklGRvYBAABXRUJQVlA4IOoBAAAQCQCdASooACgAPkkejEQioaEXHf8wKASEtIAGdg4KPuI4AawMYM0CPQxNUgpYRDwl/7XvI7BZKweOCt2w9gf2X5Ei2XOO6t5QLtHNQOIbeuAA/v92eKtC0RJ532eO6V+MRI+Uw17/jP5lr/st/9URgJ+A/9p10aaK6Bo/PMVvlluWnX+Fny8i7+Ub1X6KnZt3upvU0bTzFfBXj6aj3beT/9PZhV/+PxPKfs0Z+E8BPderCs/y4/rsp/5Bu7NTTPNtz6wvwiT+6fubQ5/z2/0tjnc3MQ37Nm7eVD/u7vl8+VoGFQ4URpxh2vYXySi9FLIl4IwbUsjWVxknxBI8F1RBnTQQ0Pt/BQ1gsWGaasCDcoTn/jx/9RpCHJ9oo98v4K4wqUkl6Fv/G4ePo57oJdO8KtH2736CmjwP9+vq8/eVCfYCdepMXFWVCmeP+EB8j/Eo+8v9PQtipIOIaZy7U/C+oN1DglZ90T2Sj+e4JFuDpV9fOYUwsRZtmsa+HkF6mCcIQHFAm89WzQNagfT73JZE03XPr8cwUJs7E/xAXfzRf8yNcZyKO1A5hcnaP07LIZS/r2GbcQGwYbFoFQyBSSVh+ghOceSht1j6fO2//Q+0XyWNL8RJ2DfVoShzYHTIF+LBzprL5SCDTgAA" alt=""></a></div>
+        <div class="logo"><a href="#"> <img src="data:image/webp;base64,UklGRvYBAABXRUJQVlA4IOoBAAAQCQCdASooACgAPkkejEQioaEXHf8wKASEtIAGdg4KPuI4AawMYM0CPQxNUgpYRDwl/7XvI7BZKweOCt2w9gf2X5Ei2XOO6t5QLtHNQOIbeuAA/v92eKtC0RJ532eO6V+MRI+Uw17/jP5lr/st/9URgJ+A/9p10aaK6Bo/PMVvlluWnX+Fny8i7+Ub1X6KnZt3upvU0bTzFfBXj6aj3beT/9PZhV/+PxPKfs0Z+E8BPderCs/y4/rsp/5Bu7NTTPNtz6wvwiT+6fubQ5/z2/0tjnc3MQ37Nm7eVD/u7vl8+VoGFQ4URpxh2vYXySi9FLIl4IwbUsjWVxknxBI8F1RBnTQQ0Pt/BQ1gsWGaasCDcoTn/jx/9RpCHJ9oo98v4K4wqUkl6Fv/G4ePo57oJdO8KtH2736CmjwP9+vq8/eVCfYCdepMXFWVCmeP+EB8j/Eo+8v9PQtipIOIaZy7U/C+oN1DglZ90T2Sj+e4JFuDpV9fOYUwsRZtmsa+HkF6mCcIQHFAm89WzQNagfT73JZE03XPr8cwUJs7E/xAXfzRf8yNcZyKO1A5hcnaP07LIZS/r2GbcQGwYbFoFQyBSSVh+ghOceSht1j6fO2//Q+0XyWNL8RJ2DfVoShzYHTIF+LBzprL5SCDTgAA" alt=""></a></div>
+    </div>
+
+    <div class="backMsg bg-slate-300 w-fit px-7 py-5 font-mono text-3xl ">Back To Top</div>
+
+
+    <div class="lowerNav bg-red-100 md:flex ">
+        <ul class="ml-5 mt-5 pt-10 md:w-1/5">
+            <li class="items text-2xl h-10">What's new</li>
+            <li class="items text-sm h-10 font-serif">Microsoft 365</li>
+            <li class="items text-sm h-10 font-serif">games</li>
+            <li class="items text-sm h-10 font-serif">Surface pro 9</li>
+            <li class="items text-sm h-10 font-serif">Surface Laptop 5</li>
+            <li class="items text-sm h-10 font-serif">Surface Laptop Studio</li>
+            <li class="items text-sm h-10 font-serif">Surface laptop Go 2</li>
+            <li class="items text-sm h-10 font-serif">Window 11 apps</li>
+
+        </ul>
+        <ul class="ml-5 mt-5 pt-10 md:w-1/5">
+            <li class="items text-2xl h-10">What's new</li>
+            <li class="items text-sm h-10 font-serif">Microsoft 365</li>
+            <li class="items text-sm h-10 font-serif">games</li>
+            <li class="items text-sm h-10 font-serif">Surface pro 9</li>
+            <li class="items text-sm h-10 font-serif">Surface Laptop 5</li>
+            <li class="items text-sm h-10 font-serif">Surface Laptop Studio</li>
+            <li class="items text-sm h-10 font-serif">Surface laptop Go 2</li>
+            <li class="items text-sm h-10 font-serif">Window 11 apps</li>
+
+        </ul>  
+          <ul class="ml-5 mt-5 pt-10 md:w-1/5">
+            <li class="items text-2xl h-10">What's new</li>
+            <li class="items text-sm h-10 font-serif">Microsoft 365</li>
+            <li class="items text-sm h-10 font-serif">games</li>
+            <li class="items text-sm h-10 font-serif">Surface pro 9</li>
+            <li class="items text-sm h-10 font-serif">Surface Laptop 5</li>
+            <li class="items text-sm h-10 font-serif">Surface Laptop Studio</li>
+            <li class="items text-sm h-10 font-serif">Surface laptop Go 2</li>
+            <li class="items text-sm h-10 font-serif">Window 11 apps</li>
+
+        </ul>  <ul class="ml-5 mt-5 pt-10 md:w-1/5">
+            <li class="items text-2xl h-10">What's new</li>
+            <li class="items text-sm h-10 font-serif">Microsoft 365</li>
+            <li class="items text-sm h-10 font-serif">games</li>
+            <li class="items text-sm h-10 font-serif">Surface pro 9</li>
+            <li class="items text-sm h-10 font-serif">Surface Laptop 5</li>
+            <li class="items text-sm h-10 font-serif">Surface Laptop Studio</li>
+            <li class="items text-sm h-10 font-serif">Surface laptop Go 2</li>
+            <li class="items text-sm h-10 font-serif">Window 11 apps</li>
+
+        </ul>  <ul class="ml-5 mt-5 pt-10 md:w-1/5">
+            <li class="items text-2xl h-10">What's new</li>
+            <li class="items text-sm h-10 font-serif">Microsoft 365</li>
+            <li class="items text-sm h-10 font-serif">games</li>
+            <li class="items text-sm h-10 font-serif">Surface pro 9</li>
+            <li class="items text-sm h-10 font-serif">Surface Laptop 5</li>
+            <li class="items text-sm h-10 font-serif">Surface Laptop Studio</li>
+            <li class="items text-sm h-10 font-serif">Surface laptop Go 2</li>
+            <li class="items text-sm h-10 font-serif">Window 11 apps</li>
+
+        </ul>
+    </div>
+    <div class="term_css bg-pink-100">
+        <ul class="ml-5 pt-10  flex space-x-3">
+            <li class="items text-sm h-10 font-serif">Contact Microsoft</li>
+            <li class="items text-sm h-10 font-serif">Privacy</li>
+            <li class="items text-sm h-10 font-serif">Terms of use</li>
+            <li class="items text-sm h-10 font-serif">Trademark</li>
+            <li class="items text-sm h-10 font-serif">About our Ads</li>
+            <li class="items text-sm h-10 font-serif">@ Microsoft 2023</li>
+            <li class="items text-sm h-10 font-serif">Window 11 apps</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
